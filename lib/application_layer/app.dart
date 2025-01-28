@@ -16,7 +16,7 @@ class App extends StatelessWidget{
       initialBinding: StateHoldersBinding(),
       theme: AppThemes.LightTheme(context, mdw, mdh),
       darkTheme: AppThemes.DarkTheme(context, mdw, mdh),
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.light,
       home: AdaptiveHelper(App: Home(), Web: HomeWeb()),
     );
   }
