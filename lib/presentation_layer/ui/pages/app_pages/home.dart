@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:sixbites/presentation_layer/state_holders/home_controller.dart';
-class Home extends StatelessWidget{
+import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/custom_navbar.dart';
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    HomeController home=Get.find();
+    var mdw=MediaQuery.sizeOf(context).width;
+    var mdh=MediaQuery.sizeOf(context).height;
     return Scaffold(
-      body: Center(child: Text("App"),),
+      body: ListView.builder(
+        itemCount: 100,
+        itemBuilder: (context, index) {
+          return Text("Hello");
+        },
+      ),
+      bottomNavigationBar: CustomNavbar(mdw: mdw, mdh: mdh),
     );
   }
 }

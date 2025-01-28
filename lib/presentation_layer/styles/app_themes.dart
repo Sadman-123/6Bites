@@ -3,7 +3,7 @@ class AppThemes {
   static ThemeData LightTheme(BuildContext context,double mdw,double mdh)
   {
     return ThemeData(
-      brightness: Brightness.light
+      brightness: Brightness.light,
     );
   }
   static ThemeData DarkTheme(BuildContext context,double mdw,double mdh)
