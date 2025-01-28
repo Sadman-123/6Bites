@@ -39,9 +39,9 @@ class Home extends StatelessWidget {
         ],
         title: Row(
           children: [
-            Icon(Icons.home,size: mdw*0.055,color: Color(0xFFcdcdcd),),
+            Icon(Icons.home_filled,size: mdw*0.057,color: Color(0xFFcdcdcd),),
             SizedBox(width: mdw*0.011),
-            Text("Mirpur,Dhaka",style: TextStyle(fontSize: mdw*0.046,color: Color(0xFFcdcdcd)),)
+            Text("Mirpur,Dhaka,Bangladesh",style: TextStyle(fontSize: mdw*0.043,color: Color(0xFFcdcdcd)),)
           ],
         ),
       ),
