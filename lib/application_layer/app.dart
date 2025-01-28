@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sixbites/application_layer/state_holders_binding.dart';
 import 'package:sixbites/presentation_layer/styles/app_themes.dart';
-import 'package:sixbites/presentation_layer/ui/home.dart';
+import 'package:sixbites/presentation_layer/ui/pages/home.dart';
 class App extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
