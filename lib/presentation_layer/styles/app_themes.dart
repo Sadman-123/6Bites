@@ -4,12 +4,14 @@ class AppThemes {
   {
     return ThemeData(
       brightness: Brightness.light,
+      fontFamily: "inter"
     );
   }
   static ThemeData DarkTheme(BuildContext context,double mdw,double mdh)
   {
     return ThemeData(
-        brightness: Brightness.dark
+        brightness: Brightness.dark,
+        fontFamily: "inter"
     );
   }
 }
