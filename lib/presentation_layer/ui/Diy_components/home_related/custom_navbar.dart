@@ -8,6 +8,7 @@ class CustomNavbar extends StatelessWidget{
   Widget build(BuildContext context) {
     return Container(
       height: mdh*0.1,
+      color: Colors.white,
       child: Stack(
         children: [
           Positioned(
@@ -15,7 +16,7 @@ class CustomNavbar extends StatelessWidget{
             left: 0,
             right: 0,
             child: Container(
-              height: mdh*0.075,
+              height: mdh*0.079,
               decoration: BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
@@ -53,7 +54,7 @@ class CustomNavbar extends StatelessWidget{
           ),
           // Center floating button
           Positioned(
-            bottom: mdh*0.03125,
+            bottom: mdh*0.03022,
             left: mdw / 2 - 30,
             child: FloatingActionButton(
               backgroundColor: Color(0xFF029c55),
