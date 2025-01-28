@@ -9,7 +9,7 @@ class App extends StatelessWidget{
     var mdw=MediaQuery.sizeOf(context).width;
     var mdh=MediaQuery.sizeOf(context).height;
     return GetMaterialApp(
-      title: "SixBites",
+      title: "Stack Food",
       debugShowCheckedModeBanner: false,
       initialBinding: StateHoldersBinding(),
       theme: AppThemes.LightTheme(context, mdw, mdh),
