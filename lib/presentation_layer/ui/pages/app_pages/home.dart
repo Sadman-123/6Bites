@@ -6,6 +6,7 @@ import 'package:sixbites/presentation_layer/state_holders/home_controller.dart';
 import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/category_card.dart';
 import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/custom_navbar.dart';
 import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/custom_textfield.dart';
+import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/popular_card.dart';
 class Home extends StatelessWidget {
   HomeController home=Get.find();
   @override
@@ -87,6 +88,36 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+          SliverToBoxAdapter(
+            child: Container(
+              margin: EdgeInsets.all(10),
+              child: Column(
+                children: [
+                  Container(
+                    child: Row(
+                      children: [
+                        Text("Popular Food Nearby",style: TextStyle(fontSize: mdw*0.057,fontWeight: FontWeight.bold,color: Color(0xFF010742)),),
+                        Text("View All",style: TextStyle(fontSize: mdw*0.044,color: Color(0xFF18a563),decoration: TextDecoration.underline,decorationColor: Color(0xFF18a563),fontWeight: FontWeight.bold),)
+                      ],
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    ),
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Container(
+                      child:Obx((){
+                        return Row(
+                          children:List.generate(home.popular_list.length, (index) {
+                            return PopularCard(mdw, mdh, "${home.popular_list[index]['image_full_url']}", "${home.popular_list[index]['name']}", "${home.popular_list[index]['restaurant_name']}", home.popular_list[index]['price'], double.parse(home.popular_list[index]['avg_rating'].toStringAsFixed(1)));
+                          },),
+                        );
+                      }),
+                    ),
+                  )
+                ],
+            ),
+          )
           ),
         ],
       ),
