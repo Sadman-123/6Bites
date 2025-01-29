@@ -67,7 +67,7 @@ class Home extends StatelessWidget {
                     child: Row(
                       children: [
                         Text("Categories",style: TextStyle(fontSize: mdw*0.057,fontWeight: FontWeight.bold,color: Color(0xFF010742)),),
-                        Text("View All",style: TextStyle(fontSize: mdw*0.044,color: Color(0xFF18a563),decoration: TextDecoration.underline,decorationColor: Color(0xFF18a563)),)
+                        Text("View All",style: TextStyle(fontSize: mdw*0.044,color: Color(0xFF18a563),decoration: TextDecoration.underline,decorationColor: Color(0xFF18a563),fontWeight: FontWeight.bold),)
                       ],
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     ),
