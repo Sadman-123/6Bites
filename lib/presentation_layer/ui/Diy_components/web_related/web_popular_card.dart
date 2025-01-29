@@ -13,7 +13,7 @@ Widget WebPopularCard(double mdw,double mdh,String picurl,String foodname,String
           ),
         ],
       ),
-      height: mdh * 0.28,
+      height: mdh * 0.367,
       width: mdw * 0.157,
       child: Column(
         children: [
@@ -57,7 +57,7 @@ Widget WebPopularCard(double mdw,double mdh,String picurl,String foodname,String
                         color: Color(0xFF0e144c), fontSize: mdw * 0.0138,fontWeight: FontWeight.bold),),
                     Row(
                       children: [
-                        Icon(Icons.star, color: Color(0xFF22a96b),),
+                        Icon(Icons.star, color: Color(0xFF22a96b),size: mdw * 0.0131 ,),
                         Text("${rating}", style: TextStyle(color: Color(
                             0xFF22a96b), fontSize: mdw * 0.0131),)
                       ],

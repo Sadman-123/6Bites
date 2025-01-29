@@ -11,209 +11,215 @@ class HomeWeb extends StatelessWidget {
   Widget build(BuildContext context) {
     var mdw=MediaQuery.sizeOf(context).width;
     var mdh=MediaQuery.sizeOf(context).height;
-    return Scaffold(
-        body: Row(
-          children: [
-            Expanded(
-                child: Container(
-              child: Column(
-                children: [
-                  Flexible(
-                    child: Container(
-                      child: Center(
-                        child: Text("LOGO",style: TextStyle(fontSize: 33),),
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+          body: Row(
+            children: [
+              Expanded(
+                  child: Container(
+                child: Column(
+                  children: [
+                    Flexible(
+                      child: Container(
+                        child: Center(
+                          child: Text("LOGO",style: TextStyle(fontSize: mdw*0.02),),
+                        ),
                       ),
                     ),
-                  ),
-                  Flexible(
-                    flex: 4,
-                      child: Container(
-                        child: Column(
-                          children: [
-                            ListTile(title: Text("Home"),leading: FaIcon(FontAwesomeIcons.house,color: Color(0xFF88a5bc)),onTap: (){},),
-                            Divider(),
-                            ListTile(title: Text("Favourites"),leading: FaIcon(FontAwesomeIcons.heart,color: Color(0xFF88a5bc)),onTap: (){},),
-                            Divider(),
-                            ListTile(title: Text("Billing"),leading: FaIcon(FontAwesomeIcons.filePen,color: Color(0xFF88a5bc)),onTap: (){},),
-                            Divider(),
-                            ListTile(title: Text("About Us"),leading: FaIcon(FontAwesomeIcons.info,color: Color(0xFF88a5bc)),onTap: (){},),
-                          ],
-                        )
-                        ),
-                      )
-                ],
-              ),
-            )),
-            Expanded(
-                flex: 4,
-                child: Container(
-                  color: Colors.white,
-                  child: Column(
-                    children: [
-                      Container(
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    Flexible(
+                      flex: 4,
+                        child: Container(
+                          child: Column(
                             children: [
-                              Row(
+                              ListTile(title: Text("Home",style: TextStyle(fontSize: mdw*0.011),),leading: FaIcon(FontAwesomeIcons.house,color: Color(0xFF88a5bc),size: mdw*0.014,),onTap: (){},),
+                              Divider(),
+                              ListTile(title: Text("Favourites",style: TextStyle(fontSize: mdw*0.011),),leading: FaIcon(FontAwesomeIcons.heart,color: Color(0xFF88a5bc),size: mdw*0.014,),onTap: (){},),
+                              Divider(),
+                              ListTile(title: Text("Billing",style: TextStyle(fontSize: mdw*0.011),),leading: FaIcon(FontAwesomeIcons.filePen,color: Color(0xFF88a5bc),size: mdw*0.014,),onTap: (){},),
+                              Divider(),
+                              ListTile(title: Text("About Us",style: TextStyle(fontSize: mdw*0.011),),leading: FaIcon(FontAwesomeIcons.info,color: Color(0xFF88a5bc),size: mdw*0.014,),onTap: (){},),
+                            ],
+                          )
+                          ),
+                        )
+                  ],
+                ),
+              )),
+              Expanded(
+                  flex: 4,
+                  child: Container(
+                    color: Colors.white,
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.vertical,
+                      child: Column(
+                        children: [
+                          Container(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(Icons.home_filled,size: mdw*0.017,color: Color(0xFFcdcdcd),),
-                                  SizedBox(width: mdw*0.0025),
-                                  Text("Mirpur,Dhaka,Bangladesh",style: TextStyle(fontSize: mdw*0.013,color: Color(0xFFcdcdcd)),)
-                                ],
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Stack(
-                                  clipBehavior: Clip.none,
-                                  children: [
-                                    FaIcon(FontAwesomeIcons.solidBell, color: Color(0xFF000101), size: mdw * 0.017),
-                                    Positioned(
-                                      top: 0,
-                                      right: 0,
-                                      child: Container(
-                                        width: mdw * 0.008,
-                                        height: mdw * 0.008,
-                                        decoration: BoxDecoration(
-                                          color: Colors.red,
-                                          shape: BoxShape.circle,
-                                          border: Border.all(
-                                            color: Colors.white,
-                                            width: mdw*0.014,
+                                  Row(
+                                    children: [
+                                      Icon(Icons.home_filled,size: mdw*0.017,color: Color(0xFFcdcdcd),),
+                                      SizedBox(width: mdw*0.0025),
+                                      Text("Mirpur,Dhaka,Bangladesh",style: TextStyle(fontSize: mdw*0.013,color: Color(0xFFcdcdcd)),)
+                                    ],
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Stack(
+                                      clipBehavior: Clip.none,
+                                      children: [
+                                        FaIcon(FontAwesomeIcons.solidBell, color: Color(0xFF000101), size: mdw * 0.017),
+                                        Positioned(
+                                          top: 0,
+                                          right: 0,
+                                          child: Container(
+                                            width: mdw * 0.008,
+                                            height: mdw * 0.008,
+                                            decoration: BoxDecoration(
+                                              color: Colors.red,
+                                              shape: BoxShape.circle,
+                                              border: Border.all(
+                                                color: Colors.white,
+                                                width: mdw*0.014,
+                                              ),
+                                            ),
                                           ),
                                         ),
-                                      ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: mdw*0.334,
+                            child:Container(
+                              padding: EdgeInsets.all(15),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Color(0xFFfffefe),
+                                  borderRadius: BorderRadius.circular(10),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.09),
+                                      spreadRadius: 0.5,
+                                      blurRadius: 8,
+                                      offset: Offset(0, 4),
+                                    ),
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.05),
+                                      spreadRadius: 0.6,
+                                      blurRadius: 8,
+                                      offset: Offset(4, 0),
+                                    ),
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.05),
+                                      spreadRadius: 0.6,
+                                      blurRadius: 8,
+                                      offset: Offset(-4, 0),
                                     ),
                                   ],
                                 ),
+                                child: TextField(
+                                  readOnly: true,
+                                  decoration: InputDecoration(
+                                    suffixIcon: Icon(CupertinoIcons.search),
+                                    hintText: "Search food or restaurant here..",
+                                    filled: true,
+                                    fillColor: Colors.transparent, // Important to keep the same color as the container
+                                    hintStyle: TextStyle(
+                                      color: Color(0xFFacacad),
+                                      fontSize: mdw * 0.012,
+                                    ),
+                                    border: OutlineInputBorder(
+                                      borderSide: BorderSide.none,
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                  ),
+                                ),
                               ),
-                            ],
+                            ) ,
                           ),
-                        ),
-                      ),
-                      Container(
-                        width: mdw*0.334,
-                        child:Container(
-                          padding: EdgeInsets.all(15),
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Color(0xFFfffefe),
-                              borderRadius: BorderRadius.circular(10),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.black.withOpacity(0.09),
-                                  spreadRadius: 0.5,
-                                  blurRadius: 8,
-                                  offset: Offset(0, 4),
+                          Container(
+                            margin: EdgeInsets.all(10),
+                            child:Column(
+                              children: [
+                                Container(
+                                  child: Row(
+                                    children: [
+                                      Text("Categories",style: TextStyle(fontSize: mdw*0.022,fontWeight: FontWeight.bold,color: Color(0xFF010742)),),
+                                      Text("View All",style: TextStyle(fontSize: mdw*0.015,color: Color(0xFF18a563),decoration: TextDecoration.underline,decorationColor: Color(0xFF18a563),fontWeight: FontWeight.bold),)
+                                    ],
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  ),
                                 ),
-                                BoxShadow(
-                                  color: Colors.black.withOpacity(0.05),
-                                  spreadRadius: 0.6,
-                                  blurRadius: 8,
-                                  offset: Offset(4, 0),
-                                ),
-                                BoxShadow(
-                                  color: Colors.black.withOpacity(0.05),
-                                  spreadRadius: 0.6,
-                                  blurRadius: 8,
-                                  offset: Offset(-4, 0),
-                                ),
+                                Container(
+                                  child: SingleChildScrollView(
+                                    scrollDirection: Axis.horizontal,
+                                    child: Container(
+                                      child:Obx((){
+                                        return Row(
+                                          children:List.generate(home.category_list.length, (index) {
+                                            return WebCategoryCard(mdw, mdh, "${home.category_list[index]['image_full_url']}", "${home.category_list[index]['name']}");
+                                          },),
+                                        );
+                                      }),
+                                    ),
+                                  ),
+                                )
                               ],
                             ),
-                            child: TextField(
-                              readOnly: true,
-                              decoration: InputDecoration(
-                                suffixIcon: Icon(CupertinoIcons.search),
-                                hintText: "Search food or restaurant here..",
-                                filled: true,
-                                fillColor: Colors.transparent, // Important to keep the same color as the container
-                                hintStyle: TextStyle(
-                                  color: Color(0xFFacacad),
-                                  fontSize: mdw * 0.012,
+                          ),
+                          Container(
+                            margin: EdgeInsets.all(10),
+                            child:Column(
+                              children: [
+                                Container(
+                                  child: Row(
+                                    children: [
+                                      Text("Popular Food Nearby",style: TextStyle(fontSize: mdw*0.022,fontWeight: FontWeight.bold,color: Color(0xFF010742)),),
+                                      Text("View All",style: TextStyle(fontSize: mdw*0.015,color: Color(0xFF18a563),decoration: TextDecoration.underline,decorationColor: Color(0xFF18a563),fontWeight: FontWeight.bold),)
+                                    ],
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  ),
                                 ),
-                                border: OutlineInputBorder(
-                                  borderSide: BorderSide.none,
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                              ),
+                                Container(
+                                  child: SingleChildScrollView(
+                                    scrollDirection: Axis.horizontal,
+                                    child: Container(
+                                      child:Obx((){
+                                        return Row(
+                                          children:List.generate(home.popular_list.length, (index) {
+                                            return WebPopularCard(mdw, mdh, "${home.popular_list[index]['image_full_url']}", "${home.popular_list[index]['name']}", "${home.popular_list[index]['restaurant_name']}", home.popular_list[index]['price'], double.parse(home.popular_list[index]['avg_rating'].toStringAsFixed(1)));
+                                          },),
+                                        );
+                                      }),
+                                    ),
+                                  ),
+                                )
+                              ],
                             ),
                           ),
-                        ) ,
+                        ],
                       ),
-                      Container(
-                        margin: EdgeInsets.all(10),
-                        child:Column(
-                          children: [
-                            Container(
-                              child: Row(
-                                children: [
-                                  Text("Categories",style: TextStyle(fontSize: mdw*0.022,fontWeight: FontWeight.bold,color: Color(0xFF010742)),),
-                                  Text("View All",style: TextStyle(fontSize: mdw*0.015,color: Color(0xFF18a563),decoration: TextDecoration.underline,decorationColor: Color(0xFF18a563),fontWeight: FontWeight.bold),)
-                                ],
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              ),
-                            ),
-                            Container(
-                              child: SingleChildScrollView(
-                                scrollDirection: Axis.horizontal,
-                                child: Container(
-                                  child:Obx((){
-                                    return Row(
-                                      children:List.generate(home.category_list.length, (index) {
-                                        return WebCategoryCard(mdw, mdh, "${home.category_list[index]['image_full_url']}", "${home.category_list[index]['name']}");
-                                      },),
-                                    );
-                                  }),
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.all(10),
-                        child:Column(
-                          children: [
-                            Container(
-                              child: Row(
-                                children: [
-                                  Text("Popular Food Nearby",style: TextStyle(fontSize: mdw*0.022,fontWeight: FontWeight.bold,color: Color(0xFF010742)),),
-                                  Text("View All",style: TextStyle(fontSize: mdw*0.015,color: Color(0xFF18a563),decoration: TextDecoration.underline,decorationColor: Color(0xFF18a563),fontWeight: FontWeight.bold),)
-                                ],
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              ),
-                            ),
-                            Container(
-                              child: SingleChildScrollView(
-                                scrollDirection: Axis.horizontal,
-                                child: Container(
-                                  child:Obx((){
-                                    return Row(
-                                      children:List.generate(home.popular_list.length, (index) {
-                                        return WebPopularCard(mdw, mdh, "${home.popular_list[index]['image_full_url']}", "${home.popular_list[index]['name']}", "${home.popular_list[index]['restaurant_name']}", home.popular_list[index]['price'], double.parse(home.popular_list[index]['avg_rating'].toStringAsFixed(1)));
-                                      },),
-                                    );
-                                  }),
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ))
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Color(0xFF029c55),
-          shape: CircleBorder(),
-          onPressed: () {},
-          child: Icon(
-            Icons.shopping_cart,
-            color: Colors.white,
+                    ),
+                  ))
+            ],
           ),
-        ));
+          floatingActionButton: FloatingActionButton(
+            backgroundColor: Color(0xFF029c55),
+            shape: CircleBorder(),
+            onPressed: () {},
+            child: Icon(
+              Icons.shopping_cart,
+              color: Colors.white,
+            ),
+          )),
+    );
   }
 }
