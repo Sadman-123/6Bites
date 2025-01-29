@@ -87,7 +87,7 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
       bottomNavigationBar: CustomNavbar(mdw: mdw, mdh: mdh),
