@@ -54,7 +54,7 @@ Widget WebPopularCard(double mdw,double mdh,String picurl,String foodname,String
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("\$${price}", style: TextStyle(
-                        color: Color(0xFF0e144c), fontSize: mdw * 0.0138,fontWeight: FontWeight.bold),),
+                        color: Color(0xFF0e144c), fontSize: mdw * 0.0228,fontWeight: FontWeight.bold),),
                     Row(
                       children: [
                         Icon(Icons.star, color: Color(0xFF22a96b),size: mdw * 0.0131 ,),
