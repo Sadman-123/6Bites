@@ -48,7 +48,9 @@ Widget CampaignCard(double mdw,double mdh,String picurl,String foodname,String r
                 Text("$foodname", style: TextStyle(color: Color(0xFF030a45),
                     fontSize: mdw * 0.0431,
                     fontWeight: FontWeight.w600), maxLines: 1, overflow: TextOverflow.ellipsis,),
-                Text("$restaurant", style: TextStyle(color: Color(0xFFafafae)),
+                Text("$restaurant",
+                  style: TextStyle(
+                    color: Color(0xFFafafae)),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,),
                 Container(

@@ -7,6 +7,7 @@ import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/categ
 import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/custom_navbar.dart';
 import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/custom_textfield.dart';
 import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/popular_card.dart';
+import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/restaurant_card.dart';
 class Home extends StatelessWidget {
   HomeController home=Get.find();
   @override
@@ -149,7 +150,56 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
-          )
+          ),
+          SliverToBoxAdapter(
+            child: Container(
+              margin: EdgeInsets.only(
+                left: 10,
+                right: 10,
+                top: 10
+              ),
+              child: Column(
+                children: [
+                  Container(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "All Restaurants",
+                          style: TextStyle(
+                            fontSize: mdw * 0.057,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFF010742),
+                          ),
+                        ),
+                        Icon(
+                          Icons.filter_list,
+                          size: mdw * 0.057,
+                          color: Color(0xFF010742),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    child: Obx((){
+                      return ListView.separated(
+                        shrinkWrap: true,
+                        physics: NeverScrollableScrollPhysics(),
+                        itemBuilder: (context, index) {
+                          return RestaurantCard(mdw, mdh, "${home.restaurant_list[index]['logo_full_url']}", "${home.restaurant_list[index]['name']}", "${home.restaurant_list[index]['address']}", "${home.restaurant_list[index]['reviews_comments_count']}","${home.restaurant_list[index]['avg_rating']}");
+                        },
+                        separatorBuilder: (context, index) => Divider(
+                          indent: mdw*0.3,
+                          endIndent: mdw*0.03,
+                        ),
+                        itemCount: home.restaurant_list.length,
+                      );
+                    }),
+                  )
+                ],
+              ),
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: CustomNavbar(mdw: mdw, mdh: mdh),
