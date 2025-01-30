@@ -8,9 +8,11 @@ class HomeController extends GetxController{
     super.onInit();
     getCategories();
     getPopular();
+    getCampaign();
   }
   RxList<dynamic> category_list=[].obs;
   RxList<dynamic> popular_list=[].obs;
+  RxList<dynamic> campaign_list=[].obs;
   Future<void>getCategories()async
   {
     var url=Uri.parse(ApiUrls.Category_List);
@@ -37,6 +39,20 @@ class HomeController extends GetxController{
     if(res.statusCode==200)
     {
       popular_list.value=jsonDecode(res.body)['products'];
+    }
+  }
+  Future<void>getCampaign()async
+  {
+    var url=Uri.parse(ApiUrls.Campaign_List);
+    var res=await http.get(url,headers: {
+      'Content-Type':'application/json',
+      'zoneId':'[1]',
+      'latitude':'23.735129',
+      'longitude':'90.425614'
+    });
+    if(res.statusCode==200)
+    {
+      campaign_list.value=jsonDecode(res.body);
     }
   }
 }
