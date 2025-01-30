@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sixbites/presentation_layer/styles/app_themes.dart';
 import 'package:sixbites/presentation_layer/ui/Diy_components/adaptive_helper.dart';
-import 'package:sixbites/presentation_layer/ui/pages/app_pages/home.dart';
+import 'package:sixbites/presentation_layer/ui/pages/app_pages/home_app.dart';
 import 'package:sixbites/presentation_layer/ui/pages/web_pages/home_web.dart';
 class App extends StatelessWidget{
   @override
