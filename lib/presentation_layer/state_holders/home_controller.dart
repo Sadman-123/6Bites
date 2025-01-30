@@ -8,7 +8,9 @@ class HomeController extends GetxController {
   RxList<dynamic> popular_list = <dynamic>[].obs;
   RxList<dynamic> campaign_list = <dynamic>[].obs;
   RxList<dynamic> restaurant_list = <dynamic>[].obs;
+  RxList<dynamic> banner_list = <dynamic>[].obs;
   RxBool isLoaded = false.obs;
+  RxInt currentIndex = 0.obs;
   @override
   void onInit() {
     super.onInit();
@@ -21,6 +23,7 @@ class HomeController extends GetxController {
       getPopular(),
       getCampaign(),
       getRestaurants(),
+      getBanners(),
     ]);
     isLoaded.value = true;
   }
@@ -48,6 +51,13 @@ class HomeController extends GetxController {
       url: ApiUrls.Restaurant_List,
       list: restaurant_list,
       dataKey: 'restaurants',
+    );
+  }
+  Future<void> getBanners() async {
+    await _fetchData(
+      url: ApiUrls.Banner_List,
+      list: banner_list,
+      dataKey: 'banners',
     );
   }
   Future<void> _fetchData({
