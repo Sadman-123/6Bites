@@ -10,7 +10,7 @@ class App extends StatelessWidget{
     var mdw=MediaQuery.sizeOf(context).width;
     var mdh=MediaQuery.sizeOf(context).height;
     return GetMaterialApp(
-      title: "Stack Food",
+      title: "6Bites",
       debugShowCheckedModeBanner: false,
       theme: AppThemes.LightTheme(context, mdw, mdh),
       darkTheme: AppThemes.DarkTheme(context, mdw, mdh),
