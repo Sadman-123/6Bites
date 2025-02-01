@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:sixbites/presentation_layer/styles/app_themes.dart';
 import 'package:sixbites/presentation_layer/ui/Diy_components/adaptive_helper.dart';
 import 'package:sixbites/presentation_layer/ui/screens/app_main_screen.dart';
-import 'package:sixbites/presentation_layer/ui/screens/web_pages/home_web.dart';
+import 'package:sixbites/presentation_layer/ui/screens/web_pages/web_main_screen.dart';
 class App extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class App extends StatelessWidget{
       theme: AppThemes.LightTheme(context, mdw, mdh),
       darkTheme: AppThemes.DarkTheme(context, mdw, mdh),
       themeMode: ThemeMode.light,
-      home: AdaptiveHelper(App: AppMainScreen(), Web: HomeWeb()),
+      home: AdaptiveHelper(App: AppMainScreen(), Web: WebMainScreen()),
     );
   }
 }

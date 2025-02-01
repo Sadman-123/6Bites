@@ -7,7 +7,7 @@ import 'package:sixbites/presentation_layer/state_holders/home_controller.dart';
 import 'package:sixbites/presentation_layer/ui/Diy_components/web_related/web_campaign_card.dart';
 import 'package:sixbites/presentation_layer/ui/Diy_components/web_related/web_category_card.dart';
 import '../../Diy_components/web_related/web_popular_card.dart';
-class HomeWeb extends StatelessWidget {
+class WebMainScreen extends StatelessWidget {
   HomeController home=Get.find();
   @override
   Widget build(BuildContext context) {
