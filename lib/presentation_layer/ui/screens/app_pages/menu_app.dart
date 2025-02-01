@@ -36,32 +36,30 @@ class MenuApp extends StatelessWidget{
           color: Color(0xFFE0F2F1),
           child: Column(
             children: [
-              Container(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: CupertinoListSection(
-                    backgroundColor: Color(0xFFE0F2F1),
-                    header: Text('General',style: TextStyle(fontSize: mdw*0.05,fontWeight: FontWeight.bold,color: Colors.black),),
-                    children: [
-                     ListTile(
-                       title: Text('Profile'),
-                       leading: FaIcon(FontAwesomeIcons.user),
-                     ),
-                      ListTile(
-                        title: Text('Address'),
-                        leading: FaIcon(FontAwesomeIcons.map),
-                      ),
-                      ListTile(
-                        title: Text('Language'),
-                        leading: FaIcon(FontAwesomeIcons.language),
-                      ),
-                      ListTile(
-                        title: Text('Currency'),
-                        leading: FaIcon(FontAwesomeIcons.dollarSign),
-                      ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: CupertinoListSection(
+                  backgroundColor: Color(0xFFE0F2F1),
+                  header: Text('General',style: TextStyle(fontSize: mdw*0.05,fontWeight: FontWeight.bold,color: Colors.black),),
+                  children: [
+                   ListTile(
+                     title: Text('Profile'),
+                     leading: FaIcon(FontAwesomeIcons.user),
+                   ),
+                    ListTile(
+                      title: Text('Address'),
+                      leading: FaIcon(FontAwesomeIcons.map),
+                    ),
+                    ListTile(
+                      title: Text('Language'),
+                      leading: FaIcon(FontAwesomeIcons.language),
+                    ),
+                    ListTile(
+                      title: Text('Currency'),
+                      leading: FaIcon(FontAwesomeIcons.dollarSign),
+                    ),
 
-                    ],
-                  ),
+                  ],
                 ),
               ),
               Padding(
