@@ -11,6 +11,7 @@ class HomeController extends GetxController {
   RxList<dynamic> banner_list = <dynamic>[].obs;
   RxBool isLoaded = false.obs;
   RxInt currentIndex = 0.obs;
+  var selectedIndex = 0.obs;
   @override
   void onInit() {
     super.onInit();

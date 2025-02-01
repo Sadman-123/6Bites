@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sixbites/presentation_layer/state_holders/home_controller.dart';
+import 'package:sixbites/presentation_layer/styles/app_colors.dart';
 class BannerSection extends StatelessWidget{
   final double mdw;
   final double mdh;
@@ -51,7 +52,7 @@ class BannerSection extends StatelessWidget{
                     margin: EdgeInsets.symmetric(horizontal: 4.0),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: index==home.currentIndex.value ? Color(0xFF029c55) : Colors.grey,
+                      color: index==home.currentIndex.value ? AppColors.primaryColor : Colors.grey,
                     ),
                   );
                 }),
