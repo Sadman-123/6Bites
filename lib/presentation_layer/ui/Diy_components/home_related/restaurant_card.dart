@@ -3,7 +3,7 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 Widget RestaurantCard(double mdw,double mdh,String logo,String name,String address,String reviews_comments_count,String rating)
 {
   return Container(
-    height: mdh * 0.134,
+    height: mdh * 0.136,
     child: Row(
       children: [
         Expanded(flex: 2, child: Container(

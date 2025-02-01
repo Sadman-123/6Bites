@@ -4,7 +4,11 @@ class AppThemes {
   {
     return ThemeData(
       brightness: Brightness.light,
-      fontFamily: "inter"
+      fontFamily: "inter",
+      appBarTheme: AppBarTheme(
+        elevation: 0,
+        backgroundColor: Colors.white,
+      )
     );
   }
   static ThemeData DarkTheme(BuildContext context,double mdw,double mdh)
