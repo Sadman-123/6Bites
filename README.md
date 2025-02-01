@@ -51,3 +51,4 @@ Check out how **6Bites** adapts to different screen sizes and devices, including
 
 ---
 
+@ Shadman Sakib Mahee
