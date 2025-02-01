@@ -14,6 +14,14 @@
 
 ---
 
+## Adaptive UI in Action 🎥
+
+Check out how **6Bites** adapts to different screen sizes and devices, including Android, iPhone, and Mac:
+
+![Adaptive UI Demo](SS/src1.gif)
+
+---
+
 ## Screenshots 📸
 
 ### Mobile View (s0.png to s5.png)
