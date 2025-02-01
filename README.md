@@ -1,6 +1,6 @@
 # 6Bites 🍔🍕
 
-**6Bites** is a food delivery app inspired by StackFood, built using **Flutter**. It is designed to be adaptive and responsive, providing a seamless experience across **Android**, **Linux**, and **Web** platforms. The app uses **MediaQuery** and adaptive design principles to ensure it looks great on both mobile and desktop devices.
+**6Bites** is a food delivery app inspired by StackFood, built using **Flutter**. It is designed to be adaptive and responsive, providing a seamless experience across **Android**, **Linux**, and **Web** platforms. The app uses **MediaQuery** and adaptive design principles to ensure it looks great on both mobile and desktop devices. It also leverages **GetX** for efficient state management, dependency injection, and navigation.
 
 ---
 
@@ -8,7 +8,8 @@
 
 - **Cross-Platform**: Works on Android, Linux, and Web.
 - **Adaptive UI**: Responsive design for both mobile and desktop views.
-- **Easy Navigation**: Intuitive and user-friendly interface.
+- **State Management**: Built with **GetX** for efficient and scalable state management.
+- **Easy Navigation**: Intuitive and user-friendly interface powered by GetX.
 - **Fast Performance**: Built with Flutter for smooth and fast performance.
 - **Customizable**: Easily extendable for additional features.
 
