@@ -1,16 +1,43 @@
-# sixbites
+# 6Bites 🍔🍕
 
-A new Flutter project.
+**6Bites** is a food delivery app inspired by StackFood, built using **Flutter**. It is designed to be adaptive and responsive, providing a seamless experience across **Android**, **Linux**, and **Web** platforms. The app uses **MediaQuery** and adaptive design principles to ensure it looks great on both mobile and desktop devices.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Features 🌟
 
-A few resources to get you started if this is your first Flutter project:
+- **Cross-Platform**: Works on Android, Linux, and Web.
+- **Adaptive UI**: Responsive design for both mobile and desktop views.
+- **Easy Navigation**: Intuitive and user-friendly interface.
+- **Fast Performance**: Built with Flutter for smooth and fast performance.
+- **Customizable**: Easily extendable for additional features.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots 📸
+
+### Mobile View (s0.png to s5.png)
+| ![Mobile Screenshot 1](SS/s0.png) | ![Mobile Screenshot 2](SS/s1.png) | ![Mobile Screenshot 3](SS/s2.png) |
+|------------------------------------|------------------------------------|------------------------------------|
+| ![Mobile Screenshot 4](SS/s3.png) | ![Mobile Screenshot 5](SS/s4.png) | ![Mobile Screenshot 6](SS/s5.png) |
+
+### Desktop View (ss1.png to ss5.png)
+| ![Desktop Screenshot 1](SS/ss1.png) | ![Desktop Screenshot 2](SS/ss2.png) | ![Desktop Screenshot 3](SS/ss3.png) |
+|--------------------------------------|--------------------------------------|--------------------------------------|
+| ![Desktop Screenshot 4](SS/ss4.png) | ![Desktop Screenshot 5](SS/ss5.png) |                                      |
+
+---
+
+## Getting Started 🚀
+
+### Prerequisites
+- Flutter SDK (version 3.0 or higher)
+- Dart (version 2.17 or higher)
+- Android Studio or VS Code (with Flutter and Dart plugins installed)
+- Chrome (for web testing)
+
+### Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/6Bites.git
+   cd 6Bites
