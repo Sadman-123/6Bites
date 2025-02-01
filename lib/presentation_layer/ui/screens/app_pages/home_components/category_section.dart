@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sixbites/presentation_layer/state_holders/home_controller.dart';
-import '../../../Diy_components/home_related/category_card.dart';
+import '../../../Diy_components/app_related/category_card.dart';
 class CategorySection extends StatelessWidget{
   final double mdw;
   final double mdh;

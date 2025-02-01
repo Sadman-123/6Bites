@@ -3,8 +3,7 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:sixbites/presentation_layer/state_holders/home_controller.dart';
-
-import '../../../Diy_components/home_related/popular_card.dart';
+import '../../../Diy_components/app_related/popular_card.dart';
 class PopularFoodSection extends StatelessWidget{
   final double mdw;
   final double mdh;
