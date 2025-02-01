@@ -8,6 +8,8 @@ class AppThemes {
       appBarTheme: AppBarTheme(
         elevation: 0,
         backgroundColor: Colors.white,
+        centerTitle: true,
+        titleTextStyle: TextStyle(color: Colors.black,fontSize: mdw*0.054)
       )
     );
   }

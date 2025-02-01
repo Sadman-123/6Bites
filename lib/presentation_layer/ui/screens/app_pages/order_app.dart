@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sixbites/presentation_layer/styles/app_colors.dart';
+import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/custom_button.dart';
 class OrderApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -6,9 +8,7 @@ class OrderApp extends StatelessWidget{
     var mdh=MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
-        title: Text('My Orders',style: TextStyle(color: Colors.black,fontSize: mdw*0.054),),
-
+        title: Text("My Orders"),
       ),
       body: Container(
         color: Colors.white,
@@ -23,35 +23,13 @@ class OrderApp extends StatelessWidget{
                 child: Column(
                   children: [
                     TextField(
-                      decoration: InputDecoration(
-                        hintText: "Order ID",
-                        prefixIcon: Icon(Icons.shopping_cart),
-                        hintStyle: TextStyle(color: Color(0xFF9b9b9d),fontSize: mdw*0.040),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Color(0xFF029c55),width: 2),
-                        ),
-                      ),
+                      decoration: Input_decor(mdw, "Order ID", Icons.shopping_cart),
                     ),
                     SizedBox(
                       height: mdh*0.02,
                     ),
                     TextField(
-                      decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.phone),
-                        hintText: "Phone number",
-                        hintStyle: TextStyle(color: Color(0xFF9b9b9d),fontSize: mdw*0.040),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Color(0xFF029c55),width: 2),
-                        ),
-                      ),
+                      decoration: Input_decor(mdw, "Phone Number", Icons.phone),
                     )
                   ],
                 ),
@@ -59,20 +37,25 @@ class OrderApp extends StatelessWidget{
               SizedBox(
                 height: mdh*0.035,
               ),
-              Container(
-                width: mdw*0.75,
-                height: mdh*0.06,
-                decoration: BoxDecoration(
-                  color: Color(0xFF029c55),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Center(
-                  child: Text("Track Order",style: TextStyle(color: Color(0xFFfdfeff),fontSize: mdw*0.049,fontWeight: FontWeight.bold),),
-                ),
-              )
+              CustomButton(mdw, mdh, "Track Order")
             ],
           ),
         ),
+      ),
+    );
+  }
+  InputDecoration Input_decor(double mdw,String hint,IconData icon)
+  {
+    return InputDecoration(
+      hintText: hint,
+      prefixIcon: Icon(icon),
+      hintStyle: TextStyle(color: Color(0xFF9b9b9d),fontSize: mdw*0.040),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10),
+        borderSide: BorderSide(color:AppColors.primaryColor,width: 2),
       ),
     );
   }

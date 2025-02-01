@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/custom_button.dart';
 class FavouriteApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -6,9 +7,7 @@ class FavouriteApp extends StatelessWidget{
     var mdh=MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
-        title: Text('Favourite',style: TextStyle(color: Colors.black,fontSize: mdw*0.054),),
-
+        title: Text('Favourite'),
       ),
       body: Container(
         color: Colors.white,
@@ -33,17 +32,7 @@ class FavouriteApp extends StatelessWidget{
               SizedBox(
                 height: mdh*0.065,
               ),
-              Container(
-                width: mdw*0.75,
-                height: mdh*0.06,
-                decoration: BoxDecoration(
-                  color: Color(0xFF029c55),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Center(
-                  child: Text("Login to Continue",style: TextStyle(color: Color(0xFFfdfeff),fontSize: mdw*0.049,fontWeight: FontWeight.bold),),
-                ),
-              )
+              CustomButton(mdw, mdh, "Login to Continue"),
             ],
           ),
         ),
