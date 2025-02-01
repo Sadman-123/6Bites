@@ -44,5 +44,3 @@ Check out how **6Bites** adapts to different screen sizes and devices, including
 - Dart (version 2.17 or higher)
 - Android Studio or VS Code (with Flutter and Dart plugins installed)
 - Chrome (for web testing)
-
-  **6Bites** was created by **Sadman** which is me. It was built with love and dedication using **Flutter**, **GetX**, and other modern tools to provide a seamless experience across Android, Linux, and Web platforms.
