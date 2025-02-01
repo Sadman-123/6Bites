@@ -328,27 +328,31 @@ class Home extends StatelessWidget {
                                                         fontSize: mdw*0.057,
                                                         fontWeight: FontWeight.bold
                                                     ),),
-                                                    Text("${home.popular_list[index]['price']}",style: TextStyle(
-                                                        fontSize: mdw*0.057,
-                                                        fontWeight: FontWeight.bold
-                                                    ),)
+                                                    Text(
+                                                      "\$${home.popular_list[index]['price']}",
+                                                      style: TextStyle(
+                                                        fontSize: mdw * 0.057,
+                                                        fontWeight: FontWeight.bold,
+                                                      ),
+                                                    )
+
                                                   ],
                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 ),
                                               ),
-                                              SizedBox(height: mdh*0.021),
+                                              SizedBox(height: mdh*0.015),
                                               Container(
                                                 child: Container(
-                                                  height: mdh*0.057,
+                                                  height: mdh*0.048,
                                                   padding: EdgeInsets.all(8),
                                                   decoration: BoxDecoration(
                                                     color: Color(0xFF029c55),
                                                     borderRadius: BorderRadius.circular(10),
                                                   ),
                                                   child: Center(
-                                                    child: Text("Book Now",style: TextStyle(
+                                                    child: Text("Order Now",style: TextStyle(
                                                         color: Colors.white,
-                                                        fontSize: mdw*0.057,
+                                                        fontSize: mdw*0.047,
                                                         fontWeight: FontWeight.bold
                                                     ),),
                                                   ),
