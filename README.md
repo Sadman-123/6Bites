@@ -25,12 +25,12 @@ Check out how **6Bites** adapts to different screen sizes and devices, including
 
 ## Screenshots 📸
 
-### Mobile View(Apk)
+### Mobile View (APK)
 | ![Mobile Screenshot 1](SS/s0.png) | ![Mobile Screenshot 2](SS/s1.png) | ![Mobile Screenshot 3](SS/s2.png) |
 |------------------------------------|------------------------------------|------------------------------------|
 | ![Mobile Screenshot 4](SS/s3.png) | ![Mobile Screenshot 5](SS/s4.png) | ![Mobile Screenshot 6](SS/s5.png) |
 
-### Desktop View(Web View)
+### Desktop View (Web View)
 | ![Desktop Screenshot 1](SS/ss1.png) | ![Desktop Screenshot 2](SS/ss2.png) | ![Desktop Screenshot 3](SS/ss3.png) |
 |--------------------------------------|--------------------------------------|--------------------------------------|
 | ![Desktop Screenshot 4](SS/ss4.png) | ![Desktop Screenshot 5](SS/ss5.png) |                                      |
@@ -44,3 +44,10 @@ Check out how **6Bites** adapts to different screen sizes and devices, including
 - Dart (version 2.17 or higher)
 - Android Studio or VS Code (with Flutter and Dart plugins installed)
 - Chrome (for web testing)
+
+### Download Links 📥
+- **[Download APK](https://drive.google.com/file/d/1USvLZ9UBrdN_0VvoJFFf3o8LOkhsT4rU/view?usp=sharing)** for Android
+- **[Download Linux Version](https://drive.google.com/file/d/1aQXiMnG8Y1qiK9YJFZyqmNzVf7YQklZS/view?usp=sharing)** for Linux
+
+---
+
