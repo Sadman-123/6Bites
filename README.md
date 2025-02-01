@@ -47,7 +47,7 @@ Check out how **6Bites** adapts to different screen sizes and devices, including
 
 ### Download Links 📥
 - **[Download APK](https://drive.google.com/file/d/1USvLZ9UBrdN_0VvoJFFf3o8LOkhsT4rU/view?usp=sharing)** for Android
-- **[Download Linux Version](https://drive.google.com/file/d/1aQXiMnG8Y1qiK9YJFZyqmNzVf7YQklZS/view?usp=sharing)** for Linux
+- **[Download Linux Version](https://drive.google.com/file/d/1aQXiMnG8Y1qiK9YJFZyqmNzVf7YQklZS/view?usp=sharing)** 🐧 *for Linux (to run Just Click on sixbites)*
 - **[Live Web Version](https://6-bites.vercel.app/)** 🌐 *(Note: Due to CORS restrictions, images from the API may not load in the web version.)*  
 
 ---
