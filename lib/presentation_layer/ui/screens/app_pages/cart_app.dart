@@ -6,10 +6,8 @@ class CartApp extends StatelessWidget{
     var mdh=MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         leading: IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios)),
-        title: Text('My Cart',style: TextStyle(color: Colors.black,fontSize: mdw*0.054),),
-
+        title: Text('My Cart'),
       ),
       body: Container(
         color: Colors.white,
