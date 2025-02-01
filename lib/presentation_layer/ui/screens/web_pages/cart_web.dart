@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import '../../Diy_components/web_related/web_custom_button.dart';
 class CartWeb extends StatelessWidget{
   final double mdw;
   final double mdh;
@@ -11,7 +9,7 @@ class CartWeb extends StatelessWidget{
       child: Center(
         child: Column(
           children: [
-            AppBar(title: Text("My Cart",style: TextStyle(fontSize: mdw*0.022),),),
+            AppBar(backgroundColor: Colors.white,title: Text("My Cart",style: TextStyle(fontSize: mdw*0.022),),),
             SizedBox(
               height: mdh*0.3,
             ),

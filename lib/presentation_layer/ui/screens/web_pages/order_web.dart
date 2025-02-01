@@ -9,7 +9,7 @@ class OrderWeb extends StatelessWidget{
     return Container(
       child: Column(
         children: [
-          AppBar(title: Text("My Orders",style: TextStyle(fontSize: mdw*0.022),),),
+          AppBar(backgroundColor: Colors.white,title: Text("My Orders",style: TextStyle(fontSize: mdw*0.022),),),
           SizedBox(
             height: mdh*0.21,
           ),

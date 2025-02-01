@@ -11,7 +11,7 @@ class FavouriteWeb extends StatelessWidget{
       child: Center(
         child: Column(
           children: [
-            AppBar(title: Text("Favourite",style: TextStyle(fontSize: mdw*0.022),),),
+            AppBar(backgroundColor: Colors.white,title: Text("Favourite",style: TextStyle(fontSize: mdw*0.022),),),
             SizedBox(
               height: mdh*0.1,
             ),
