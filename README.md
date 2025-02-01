@@ -25,12 +25,12 @@ Check out how **6Bites** adapts to different screen sizes and devices, including
 
 ## Screenshots 📸
 
-### Mobile View (s0.png to s5.png)
+### Mobile View(Apk)
 | ![Mobile Screenshot 1](SS/s0.png) | ![Mobile Screenshot 2](SS/s1.png) | ![Mobile Screenshot 3](SS/s2.png) |
 |------------------------------------|------------------------------------|------------------------------------|
 | ![Mobile Screenshot 4](SS/s3.png) | ![Mobile Screenshot 5](SS/s4.png) | ![Mobile Screenshot 6](SS/s5.png) |
 
-### Desktop View (ss1.png to ss5.png)
+### Desktop View(Web View)
 | ![Desktop Screenshot 1](SS/ss1.png) | ![Desktop Screenshot 2](SS/ss2.png) | ![Desktop Screenshot 3](SS/ss3.png) |
 |--------------------------------------|--------------------------------------|--------------------------------------|
 | ![Desktop Screenshot 4](SS/ss4.png) | ![Desktop Screenshot 5](SS/ss5.png) |                                      |
