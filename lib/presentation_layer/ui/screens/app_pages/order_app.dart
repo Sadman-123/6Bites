@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sixbites/presentation_layer/styles/app_colors.dart';
-import 'package:sixbites/presentation_layer/ui/Diy_components/home_related/custom_button.dart';
+import '../../Diy_components/app_related/custom_button.dart';
 class OrderApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
