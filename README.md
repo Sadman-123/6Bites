@@ -44,9 +44,3 @@ Check out how **6Bites** adapts to different screen sizes and devices, including
 - Dart (version 2.17 or higher)
 - Android Studio or VS Code (with Flutter and Dart plugins installed)
 - Chrome (for web testing)
-
-### Installation
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/6Bites.git
-   cd 6Bites
