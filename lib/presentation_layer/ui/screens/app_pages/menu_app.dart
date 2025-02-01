@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sixbites/presentation_layer/styles/app_colors.dart';
 class MenuApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -9,7 +10,7 @@ class MenuApp extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: mdh*0.18,
-        backgroundColor: Color(0xFF029c55),
+        backgroundColor: AppColors.primaryColor,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -39,102 +40,51 @@ class MenuApp extends StatelessWidget{
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: CupertinoListSection(
-                  backgroundColor: Color(0xFFE0F2F1),
-                  header: Text('General',style: TextStyle(fontSize: mdw*0.05,fontWeight: FontWeight.bold,color: Colors.black),),
+                  backgroundColor: AppColors.CategoryBackground,
+                  header: Text('General',style: CategoryTitle(mdw),),
                   children: [
-                   ListTile(
-                     title: Text('Profile'),
-                     leading: FaIcon(FontAwesomeIcons.user),
-                   ),
-                    ListTile(
-                      title: Text('Address'),
-                      leading: FaIcon(FontAwesomeIcons.map),
-                    ),
-                    ListTile(
-                      title: Text('Language'),
-                      leading: FaIcon(FontAwesomeIcons.language),
-                    ),
-                    ListTile(
-                      title: Text('Currency'),
-                      leading: FaIcon(FontAwesomeIcons.dollarSign),
-                    ),
-
+                    _ListItem('Profile', FontAwesomeIcons.user),
+                    _ListItem('Address', FontAwesomeIcons.map),
+                    _ListItem('Language', FontAwesomeIcons.language),
+                    _ListItem('Currency', FontAwesomeIcons.dollarSign),
                   ],
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: CupertinoListSection(
-                  backgroundColor: Color(0xFFE0F2F1),
-                  header: Text('Promotional Activity',style: TextStyle(fontSize: mdw*0.05,fontWeight: FontWeight.bold,color: Colors.black),),
+                  backgroundColor: AppColors.CategoryBackground,
+                  header: Text('Promotional Activity',style: CategoryTitle(mdw),),
                   children: [
-                    ListTile(
-                      title: Text('Coupons'),
-                      leading: FaIcon(FontAwesomeIcons.ticketAlt),
-                    ),
-                    ListTile(
-                      title: Text('Loyal Points'),
-                      leading: FaIcon(FontAwesomeIcons.gift),
-                    ),
-                    ListTile(
-                      title: Text('My Wallet'),
-                      leading: FaIcon(FontAwesomeIcons.wallet),
-                    ),
+                    _ListItem('Coupons', FontAwesomeIcons.ticketAlt),
+                    _ListItem('Loyal Points', FontAwesomeIcons.gift),
+                    _ListItem('My Wallet', FontAwesomeIcons.wallet),
                   ],
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: CupertinoListSection(
-                  backgroundColor: Color(0xFFE0F2F1),
-                  header: Text('Earnings',style: TextStyle(fontSize: mdw*0.05,fontWeight: FontWeight.bold,color: Colors.black),),
+                  backgroundColor: AppColors.CategoryBackground,
+                  header: Text('Earnings',style: CategoryTitle(mdw),),
                   children: [
-                    ListTile(
-                      title: Text('Refer & Earn'),
-                      leading: FaIcon(FontAwesomeIcons.userFriends),
-                    ),
-                    ListTile(
-                      title: Text('Join as a Delivery Man'),
-                      leading: FaIcon(FontAwesomeIcons.userTie),
-                    ),
-                    ListTile(
-                      title: Text('Open Restaurant'),
-                      leading: FaIcon(FontAwesomeIcons.utensils),
-                    ),
+                    _ListItem('Refer & Earn', FontAwesomeIcons.userFriends),
+                    _ListItem('Join as a Delivery Man', FontAwesomeIcons.userTie),
+                    _ListItem('Open Restaurant', FontAwesomeIcons.utensils),
                   ],
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: CupertinoListSection(
-                  backgroundColor: Color(0xFFE0F2F1),
-                  header: Text('Help & Support',style: TextStyle(fontSize: mdw*0.05,fontWeight: FontWeight.bold,color: Colors.black),),
+                  backgroundColor: AppColors.CategoryBackground,
+                  header: Text('Help & Support',style: CategoryTitle(mdw),),
                   children: [
-                    ListTile(
-                      title: Text("Live Chat"),
-                      leading: FaIcon(FontAwesomeIcons.commentDots),
-                    ),
-                    ListTile(
-                      title: Text("Help & Support"),
-                      leading: FaIcon(FontAwesomeIcons.questionCircle),
-                    ),
-                    ListTile(
-                      title: Text("Privacy Policy"),
-                      leading: FaIcon(FontAwesomeIcons.userShield),
-                    ),
-                    ListTile(
-                      title: Text("Refund Policy"),
-                      leading: FaIcon(FontAwesomeIcons.handHoldingUsd),
-                    ),
-                    ListTile(
-                      title: Text("Cancellation Policy"),
-                      leading: FaIcon(FontAwesomeIcons.ban),
-                    ),
-                    ListTile(
-                      title: Text("Shipping Policy"),
-                      leading: FaIcon(FontAwesomeIcons.shippingFast),
-                    ),
-
+                    _ListItem('Live Chat', FontAwesomeIcons.commentDots),
+                    _ListItem('Help & Support', FontAwesomeIcons.questionCircle),
+                    _ListItem('Privacy Policy', FontAwesomeIcons.userShield),
+                    _ListItem('Refund Policy', FontAwesomeIcons.handHoldingUsd),
+                    _ListItem('Cancellation Policy', FontAwesomeIcons.ban),
                   ],
                 ),
               ),
@@ -143,5 +93,15 @@ class MenuApp extends StatelessWidget{
           ),
       ),
     );
+  }
+  ListTile _ListItem(String title, IconData icon) {
+    return ListTile(
+      title: Text(title),
+      leading: Icon(icon),
+    );
+  }
+  TextStyle CategoryTitle(double mdw)
+  {
+    return TextStyle(fontSize: mdw*0.05,fontWeight: FontWeight.bold,color: AppColors.secondaryColor);
   }
 }
